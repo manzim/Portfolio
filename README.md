@@ -1,2 +1,2 @@
 # Portfolio
-My own portfolio
+My own portfolio based on HTML, CSS, ReactJS

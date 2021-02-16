@@ -43,7 +43,7 @@ export function MyTitle() {
                         <div className="sub">
                             <Typewriter
                                 options={{
-                                    strings: ["Web Developer", "Coach", "Learner"],
+                                    strings: ["Front-end Web Developer", "Learner", "FPL veteran"],
                                     autoStart: true,
                                     loop: true,
                                     delay: 50

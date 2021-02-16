@@ -7,6 +7,7 @@ import { MyNavbar } from "../src/components/my-navbar/mynavbar.jsx";
 import { MyCarousal } from './components/my-carousal/mycarousal.jsx';
 import { MyTitle } from './components/title-msg/mytitlemsg.jsx';
 import { AboutMe } from './pages/aboutme/About';
+import { Skills } from './pages/skills/Skills'
 
 
 export function App() {
@@ -15,11 +16,6 @@ export function App() {
     <MyCarousal />
     <MyNavbar />
     <MyTitle />
-    {/* <Particles
-      className="particles particles-box"
-      params={particlesOptions}
-    /> */}
-
     <div>
       <Parallax
         blur={{ min: -30, max: 30 }}
@@ -36,6 +32,8 @@ export function App() {
         </div>
       </Parallax>
     </div>
-  </div>    </>
+    <Skills />
+  </div>    
+  </>
   );
 }

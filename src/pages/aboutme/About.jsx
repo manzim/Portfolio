@@ -22,7 +22,7 @@ export function AboutMe() {
             <Col xs={12} md={6}>
               <Row className=" align-items-start p-2 my-details rounded">
                 Hi there! I am <strong>&nbsp;Ahmed Manzim Ridwan</strong>
-                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius rutrum imperdiet. Pellentesque imperdiet nulla id euismod dignissim. Nam placerat congue ultricies. Nulla odio augue, rhoncus sed augue luctus, suscipit lobortis lorem. Maecenas quis erat urna. Nunc dignissim ligula id metus gravida maximus. Proin urna dui, ultrices sit amet imperdiet quis, aliquam in tortor. Cras magna turpis, fermentum quis lacus in, tempus molestie nibh. Quisque libero quam, tincidunt nec interdum id, rutrum sed metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam venenatis ligula sed magna accumsan, eu varius quam blandit. Maecenas id finibus libero. Integer tincidunt odio sem, suscipit pharetra eros lacinia vel. Praesent in vestibulum libero. Maecenas pretium vehicula iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                 <Col className="d-flex justify-content-center flex-wrap">
                   <div>
                     <a href="#contact">

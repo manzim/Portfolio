@@ -81,13 +81,13 @@ export const Skill = {
             skillName: "styled-components",
         },
         {
-            link: "BluePrintjs.com/documentation",
+            link: "https://blueprintjs.com/documentation",
             altText: "BlueprintJS",
             imgSrc: Blueprint,
             skillName: "BluePrintJS",
         },
         {
-            link: "tachyons.io",
+            link: "https://tachyons.io",
             altText: "tachyons",
             imgSrc: Tachyons,
             skillName: "Tachyons",
@@ -95,12 +95,12 @@ export const Skill = {
     ],
 
     backend: [
-        // {
-        //     link: "https://nodejs.org/en/",
-        //     imgAltText: "Node.js",
-        //     imgSrc: NODE_JS,
-        //     skillName: "Node.js",
-        // },
+        {
+            link: "https://nodejs.org/en/",
+            imgAltText: "Node.js",
+            imgSrc: PYTHON,
+            skillName: "Node.js",
+        },
     ],
     hostingPlatforms: [
         {
@@ -158,4 +158,12 @@ export const Skill = {
             skillName: "GIT",
         },
     ],
+    devTools: [
+        {
+            link: "https://code.visualstudio.com/docs",
+            imgAltText: "vs code",
+            imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
+            skillName: "VS Code"
+        }      
+    ]
 };

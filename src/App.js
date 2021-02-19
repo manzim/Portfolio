@@ -13,27 +13,33 @@ import { Skills } from './pages/skills/Skills'
 export function App() {
   return (
     <><div className="App" style={{ position: "relative" }}>
-    <MyCarousal />
-    <MyNavbar />
-    <MyTitle />
-    <div>
-      <Parallax
-        blur={{ min: -30, max: 30 }}
-        bgImage={require("./assets/img/parallex/background.webp")}
-        bgImageAlt=""
-        strength={-200}
-      >
-        <div>
-          <Container className="container-box rounded">
-            <Fade duration={500}>
-              <AboutMe />
-            </Fade>
-          </Container>
-        </div>
-      </Parallax>
+      <MyCarousal />
+      <MyNavbar />
+      <MyTitle />
+      <div>
+        <Parallax
+          blur={{ min: -30, max: 30 }}
+          bgImage={require("./assets/img/parallex/background.webp")}
+          bgImageAlt=""
+          strength={-200}
+        >
+          <div>
+            <Container className="container-box rounded">
+              <Fade duration={500}>
+                <AboutMe />
+              </Fade>
+            </Container>
+          </div>
+        </Parallax>
+      </div>
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <Skills />
+          </Fade>
+        </Container>
+      </div>
     </div>
-    <Skills />
-  </div>    
-  </>
+    </>
   );
 }

@@ -1,17 +1,17 @@
-import React from 'react'
-import CardDeck from 'react-bootstrap/Card';
+import React from "react";
+import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import { Skill } from './SkillsData.js'
 
 import './Skills.css'
-import Card from 'react-bootstrap/Card';
 
 export function Skills() {
     return (
         <div className="pt-3 pb-3" id="skills">
-            <h1 className="text-center font=details-b pb-4">Technical Skills</h1>
+            <h1 className="text-center font-details-b pb-4">Technical Skills</h1>
             <CardDeck >
                 <Row className="d-flex justify-content-around">
                     {/* front end part */}
@@ -26,8 +26,7 @@ export function Skills() {
                                         <span className="p-2" key={index}>
                                             <a className="text-dark text-decoration-none" href={skill.link} target="_blank" rel="noopener noreferrer">
                                                 <img src={skill.imgSrc} alt={skill.imgAltText} rounded className="image-style m-1" />
-                                            
-                                                    {skill.skillName}
+                                                {skill.skillName}
                                             </a>
                                         </span>
                                     ))}

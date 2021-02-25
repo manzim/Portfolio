@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://manzim.github.io/manzim/Portfolio",
+  "homepage": "https://manzim.github.io/Portfolio",
   "version": "1.0.0",
   "private": true,
   "dependencies": {

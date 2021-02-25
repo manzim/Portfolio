@@ -15,7 +15,7 @@ import './ProjectTimeline.css'
 export function Projects() {
     return (
         <>
-            <div id="projects mb-5">
+            <div id="projects">
                 <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
                 <Timeline>
                     <Events>

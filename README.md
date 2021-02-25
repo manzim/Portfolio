@@ -1,3 +1,5 @@
+I gave myself a deadline that before my birthday I'll publish my own portfolio again. At least will finish the UI before my birthday. It was a birthday gift from me to myself! I finished and deployed in gh-pages before my own deadline. I'll keep enhancing it in coming days.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

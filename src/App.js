@@ -4,6 +4,9 @@ import Slide from "react-reveal/Slide";
 import { Parallax } from "react-parallax";
 import Container from "react-bootstrap/Container";
 
+import Particles from "react-particles-js";
+import { ParticleOptions, particlesOptions } from "./ParticleOptions";
+
 import { MyNavbar } from "../src/components/my-navbar/mynavbar.jsx";
 import { MyCarousal } from './components/my-carousal/mycarousal.jsx';
 import { MyTitle } from './components/title-msg/mytitlemsg.jsx';
@@ -11,6 +14,8 @@ import { AboutMe } from './pages/aboutme/About';
 import { Skills } from './pages/skills/Skills'
 import { Experience } from './pages/experience/Experience.jsx';
 import { Projects } from './components/project-timeline/ProjectTimeline';
+import { ContactForm } from './components/contact-form/ContactForm';
+import { Footer } from './components/footer/Footer';
 
 
 export function App() {
@@ -18,6 +23,7 @@ export function App() {
     <><div className="App" style={{ position: "relative" }}>
       <MyCarousal />
       <MyNavbar />
+      <Particles className="particles particles-box" params={particlesOptions} /> 
       <MyTitle />
       <div>
         <Parallax
@@ -38,6 +44,7 @@ export function App() {
       <div>
         <Container className="container-box rounded">
           <Fade duration={500}>
+            <hr />
             <Skills />
           </Fade>
         </Container>
@@ -51,6 +58,7 @@ export function App() {
         >
           <Container className="container-box rounded">
             <Fade duration={500}>
+              <hr />
               <Experience />
             </Fade>
           </Container>
@@ -62,6 +70,14 @@ export function App() {
           <Projects />
         </Slide>
       </Container>
+      <Container className="container-box rounded">
+        <Fade duration={500}>
+          <hr />
+          <ContactForm />
+        </Fade>
+      </Container>
+      <hr />
+      <Footer />
     </div>
     </>
   );

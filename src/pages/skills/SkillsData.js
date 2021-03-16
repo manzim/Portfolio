@@ -6,7 +6,6 @@ import MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import REDUX from "../../assets/img/skills/redux.svg";
 import REACT_ROUTER from "../../assets/img/skills/react-router.svg";
 import REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
-import STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
 import MSSQL from "../../assets/img/skills/mssql.svg";
 import GIT from "../../assets/img/skills/git-icon.svg";
 import HEROKU from "../../assets/img/skills/heroku.svg";
@@ -74,12 +73,12 @@ export const Skill = {
             imgSrc: REACT_BOOTSTRAP,
             skillName: "React Bootstrap",
         },
-        {
-            link: "https://styled-components.com/",
-            imgAltText: "styled-components",
-            imgSrc: STYLED_COMPONENTS,
-            skillName: "styled-components",
-        },
+        // {
+        //     link: "https://styled-components.com/",
+        //     imgAltText: "styled-components",
+        //     imgSrc: STYLED_COMPONENTS,
+        //     skillName: "styled-components",
+        // },
         {
             link: "https://blueprintjs.com/documentation",
             altText: "BlueprintJS",
@@ -164,6 +163,12 @@ export const Skill = {
             imgAltText: "vs code",
             imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png",
             skillName: "VS Code"
-        }      
+        },
+        {
+            link: "https:/bootstrapstudio.io",
+            imgAltText: "React Bootstrap",
+            imgSrc: "https://mycrackfree.com/wp-content/uploads/2018/09/Bootstrap-Studio-4.3.11.png",
+            skillName: "React Bootstrap"
+        },
     ]
 };

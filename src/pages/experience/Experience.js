@@ -1,4 +1,4 @@
-import company1 from '../../assets/img/experience/company1.png'
+import company1 from '../../assets/img/experience/renssoft.png'
 import company2 from '../../assets/img/experience/deciphertech.svg'
 
 export const companyXP = {
@@ -7,7 +7,7 @@ export const companyXP = {
             imgSrc: company1,
             jobTitle: "Software Developer",
             jodDesignation: "Front-end Developer",
-            technology: "React JS, JS, Tachyons, BluePrintJS, TypeScript, IndexedDB, HTML, CSS3",
+            technology: "React JS, JavaScript, Tachyons, BluePrintJS, TypeScript, GraphQL, HTML, CSS3",
             duration: "March 2020 ~ Present",
             developed1: "multiple features of device responsive website & Software.",
             developed2: "Front end of Online Consultation Website making sure of all device responsive as of the mock-up.",

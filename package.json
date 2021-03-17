@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://manzim.github.io/Portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@merc/react-timeline": "^0.1.42",

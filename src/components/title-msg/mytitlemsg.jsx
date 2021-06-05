@@ -34,7 +34,7 @@ export function MyTitle() {
                 <div className="titleMessage">
                     <div className="heading">
                         <div className="main text-center mb-3">
-                            Assala-mu-alaikum, I am
+                            Assalamu-alaikum I am
                         <br />
                             <span>
                                 <strong> MANZIM </strong>

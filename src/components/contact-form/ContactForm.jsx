@@ -38,19 +38,19 @@ export function ContactForm() {
                                 </a>
                             </div>
                             <div className="m-2">
-                                <a href="https://www.youtube.com/user/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.youtube.com/channel/UC2aCoEuGtA-Je-XBnJKIVCw" target="_blank" rel="noopener noreferrer">
                                     <Button id="youtube-btn" variant="outline-info" title="Learn Weekly">
                                         <i class="fab fa-youtube"></i> Youtube
                                     </Button>
                                 </a>
                             </div>
-                            {/* <div className="m-2">
-                                <a href="https://twitter.com/akjha96" target="_blank" rel="noopener noreferrer">
+                            <div className="m-2">
+                                <a href="https://twitter.com/zodiac_geek" target="_blank" rel="noopener noreferrer">
                                     <Button variant="outline-info" title="Tweets are welcomed!">
                                         <i className="fab fa-twitter"></i> Twitter
                                     </Button>
                                 </a>
-                            </div> */}
+                            </div>
                             <div className="m-2">
                                 <a href="https://www.facebook.com/manzim.soumik" target="_blank" rel="noopener noreferrer">
                                     <Button variant="outline-primary" title="Poke me">

@@ -1,24 +1,26 @@
-import company1 from '../../assets/img/experience/company1.png'
+import psdk from '../../assets/img/experience/psdk.png'
 import company2 from '../../assets/img/experience/deciphertech.svg'
 
 export const companyXP = {
     Doctorkoi: [
         {
-            imgSrc: company1,
+            imgSrc: psdk,
             jobTitle: "Software Developer",
+            companyName: "RensSoft Soln Ltd",
             jodDesignation: "Front-end Developer",
-            technology: "React JS, JS, Tachyons, BluePrintJS, TypeScript, IndexedDB, HTML, CSS3",
+            technology: "React JS, JS, Tachyons, BluePrintJS, TypeScript, basic IndexedDB, HTML, CSS3, basic GraphQL",
             duration: "March 2020 ~ Present",
-            developed1: "multiple features of device responsive website & Software.",
-            developed2: "Front end of Online Consultation Website making sure of all device responsive as of the mock-up.",
-            developed3: "application small bug fixes, new requirements enhancement.",
-            developed4: ""
+            developed1: "Multiple features of device responsive website & Software.",
+            developed2: "Front end of Doctorkoi Website, making sure of all device responsive as per the mock-up.",
+            developed3: "Application small bug fixes, new feature enhancement.",
+            developed4: "Manual testing & documentation before submitting work"
         }
     ],
     DecipherTech: [
         {
             imgSrc: company2,
             jobTitle: "Jr. Web Developer",
+            companyName: "DecipherTech",
             jodDesignation: "Front-end Web Developer",
             technology: "HTML, CSS3, WordPress, JS(basic)",
             duration: "March 2019 ~ March 2020",

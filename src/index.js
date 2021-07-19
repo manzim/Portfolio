@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as Router,
+} from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "styled-components";
@@ -8,9 +11,9 @@ import { App } from './App';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
-    <React.StrictMode>
+    <Router>
       <App />
-    </React.StrictMode>
+    </Router>
   </ThemeProvider>,
 
   document.getElementById('root')

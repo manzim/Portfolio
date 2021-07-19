@@ -37,13 +37,13 @@ export function MyTitle() {
                             Assalamu-alaikum I am
                         <br />
                             <span>
-                                <strong> MANZIM </strong>
+                                <strong> AHMED MANZIM RIDWAN</strong>
                             </span>
                         </div>
                         <div className="sub">
                             <Typewriter
                                 options={{
-                                    strings: ["Front-end Developer", "Learner", "Content Writer, FPL Geek, Forward"],
+                                    strings: ["Front-end Developer", "Content Writer", "FPL Geek"],
                                     autoStart: true,
                                     loop: true,
                                     delay: 50

@@ -3,7 +3,6 @@ import CSS3 from "../../assets/img/skills/css3.svg";
 import BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
 import REACT from "../../assets/img/skills/react.svg";
 import MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
-import REDUX from "../../assets/img/skills/redux.svg";
 import REACT_ROUTER from "../../assets/img/skills/react-router.svg";
 import REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
@@ -17,9 +16,24 @@ import Blueprint from "../../assets/img/skills/blueprint.svg";
 import Tachyons from "../../assets/img/skills/Tachyons.svg";
 import POSTGRESQL from "../../assets/img/skills/postgresql.svg";
 import PYTHON from "../../assets/img/skills/python.svg";
+import gtmetrix from "../../assets/img/skills/gtmetrix.svg";
+import ubersuggest from "../../assets/img/skills/ubersuggest.jpg";
+import bingwebmaster from "../../assets/img/skills/bingwebmaster.svg";
+import searchconsole from "../../assets/img/skills/searchconsole.svg";
+import analytics from "../../assets/img/skills/analytics.svg";
+import photoshop from "../../assets/img/skills/photoshop.svg";
+import documentation from "../../assets/img/skills/documentation.svg";
+import wordpress from "../../assets/img/skills/wordpress.svg";
+import tailwindcss from "../../assets/img/skills/tailwindcss.svg";
 
 export const Skill = {
     frontEnd: [
+        {
+            link: "https://reactjs.org/",
+            imgAltText: "React JS",
+            imgSrc: REACT,
+            skillName: "React JS",
+        },
         {
             link: "https://en.wikipedia.org/wiki/HTML5",
             altText: "HTML5",
@@ -33,34 +47,22 @@ export const Skill = {
             skillName: "CSS3",
         },
         {
-            link: "https://www.javascript.com/",
-            imgAltText: "JavaScript",
-            imgSrc: JAVASCRIPT,
-            skillName: "JavaScript",
-        },
-        {
             link: "https://getbootstrap.com/",
             imgAltText: "Bootstrap",
             imgSrc: BOOTSTRAP,
             skillName: "Bootstrap",
         },
+        // {
+        //     link: "https://redux.js.org/",
+        //     imgAltText: "Redux",
+        //     imgSrc: REDUX,
+        //     skillName: "Redux",
+        // },
         {
-            link: "https://reactjs.org/",
-            imgAltText: "React JS",
-            imgSrc: REACT,
-            skillName: "React JS",
-        },
-        {
-            link: "https://redux.js.org/",
-            imgAltText: "Redux",
-            imgSrc: REDUX,
-            skillName: "Redux",
-        },
-        {
-            link: "https://reacttraining.com/react-router/",
-            imgAltText: "React Router",
-            imgSrc: REACT_ROUTER,
-            skillName: "React Router",
+            link: "https://wordpress.org",
+            imgAltText: "Wordpress",
+            imgSrc: wordpress,
+            skillName: "WordPress",
         },
         {
             link: "https://material-ui.com/",
@@ -81,6 +83,12 @@ export const Skill = {
             skillName: "styled-components",
         },
         {
+            link: "https://tailwindcss.com/",
+            altText: "tailwind css",
+            imgSrc: tailwindcss,
+            skillName: "Tailwind css",
+        },
+        {
             link: "https://blueprintjs.com/documentation",
             altText: "BlueprintJS",
             imgSrc: Blueprint,
@@ -94,12 +102,51 @@ export const Skill = {
         },
     ],
 
-    backend: [
+    // backend: [
+    //     {
+    //         link: "https://nodejs.org/en/",
+    //         imgAltText: "Node.js",
+    //         imgSrc: PYTHON,
+    //         skillName: "Node.js",
+    //     },
+    // ],
+    others : [
         {
-            link: "https://nodejs.org/en/",
-            imgAltText: "Node.js",
-            imgSrc: PYTHON,
-            skillName: "Node.js",
+            link: "https://www.adobe.com/products/photoshop.html",
+            imgAltText: "adobe photoshop",
+            imgSrc: photoshop,
+            skillName: "Adobe Photoshop"
+        },{
+            link: "",
+            imgAltText: "documentation",
+            imgSrc: documentation,
+            skillName: "Manual testing documentation"
+        },
+        {
+            link: "https://analytics.google.com/",
+            imgAltText: "google analytics",
+            imgSrc: analytics,
+            skillName: "Google Analytics"
+        },{
+            link: "https://search.google.com/",
+            imgAltText: "",
+            imgSrc: searchconsole,
+            skillName: "Google Search Console"
+        },{
+            link: "https://neilpatel.com/ubersuggest/",
+            imgAltText: "gtmetrix",
+            imgSrc: ubersuggest,
+            skillName: "UberSuggests"
+        },{
+            link: "https://www.bing.com/webmasters/about",
+            imgAltText: "bing webmaster tool",
+            imgSrc: bingwebmaster,
+            skillName: "Bing Webmaster Tool"
+        },{
+            link: "https://gtmetrix.com/",
+            imgAltText: "GTMetrix",
+            imgSrc: gtmetrix,
+            skillName: "GTMetrix"
         },
     ],
     hostingPlatforms: [
@@ -131,9 +178,9 @@ export const Skill = {
         },
         {
             link: "https://www.python.org/",
-            imgAltText: "Python",
+            imgAltText: "Basic Python",
             imgSrc: PYTHON,
-            skillName: "Python",
+            skillName: "Basic Python",
         },
     ],
     databases: [

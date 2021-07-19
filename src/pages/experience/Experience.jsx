@@ -16,17 +16,17 @@ export function Experience() {
                     <Container>
                         <Tilt options={{ max: 25 }}>
                             <Card>
-                                <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
+                                <Card.Header  className="d-flex justify-content-center flex-wrap">
                                     <Card.Img
                                         variant="top"
                                         className="img-resize"
                                         src={details.imgSrc}
-                                        alt="Google"
+                                        alt={details.companyName}
                                     />
                                 </Card.Header>
                                 <Card.Body className="d-flex justify-content-center flex-column">
                                     <div>
-                                        <Card.Title className="text-center">{details.jobTitle}</Card.Title>
+                                        <Card.Title className="text-center" >{details.jobTitle}</Card.Title>
                                     </div>
                                     <div>
                                         <Card.Text className="text-center style">
@@ -36,14 +36,12 @@ export function Experience() {
                                             <br />
                                             <strong>Duration:</strong> {details.duration}
                                             <br />
-                                            <strong> Description </strong>
+                                            <strong> # Job Responsibilities #</strong>
                                             <ul className="text-left">
                                                 <li><strong>Developed &amp; enhanced</strong> {details.developed1}</li>
-                                                <li><strong>Developed</strong> {details.developed2}
-                                                </li>
-                                                <li><strong>Provided</strong> {details.developed3}
-                                                </li>
-                                                {/* <li><strong>Co-created</strong> React Document used as a guide for new developers.</li> */}
+                                                <li><strong>Developed</strong> {details.developed2}</li>
+                                                <li><strong>Provided</strong> {details.developed3}</li>
+                                                <li>{details.developed4}</li>
                                             </ul>
                                         </Card.Text>
                                     </div>
@@ -59,7 +57,7 @@ export function Experience() {
                     <Container>
                         <Tilt options={{ max: 25 }}>
                             <Card>
-                                <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
+                                <Card.Header  className="d-flex justify-content-center flex-wrap">
                                     <Card.Img
                                         variant="top" className="img-resize" src={details.imgSrc}
                                         alt="Renssoft Software Solutions. Ltd"

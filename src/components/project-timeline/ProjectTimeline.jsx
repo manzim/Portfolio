@@ -5,27 +5,34 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 
+import tictactoe from "../../assets/img/skills/tictactoe.svg";
 import HTML5 from "../../assets/img/skills/html-5.svg";
 import CSS3 from "../../assets/img/skills/css3.svg";
-
-import Project1 from "../../assets/img/projects/project1.jpg";
+import REACT from "../../assets/img/skills/react.svg";
+import api from "../../assets/img/skills/api.svg";
+import rockpapperscissorgame from "../../assets/img/skills/rockpapperscissorgame.svg";
+import weatherapp from "../../assets/img/skills/weatherapp.svg";
+import typescript from "../../assets/img/skills/typescript.svg";
+import Blueprint from "../../assets/img/skills/blueprint.svg";
+import Tachyons from "../../assets/img/skills/Tachyons.svg";
+import todolist from "../../assets/img/skills/todolist.svg";
 
 import './ProjectTimeline.css'
 
 export function Projects() {
     return (
         <>
-            <div id="projects mb-5">
+            <div id="projects" className="mb3">
                 <h1 className="pt-3 text-center font-details-b pb-3">PROJECTS</h1>
                 <Timeline>
                     <Events>
-                        {/* Project: Todo List With MUI */}
+                        {/* customized rockpapperscissor game */}
                         <ImageEvent
                             date="01/10/2020"
                             className="text-center"
-                            text="React ToDo App"
-                            src={CSS3}
-                            alt="React ToDo App"
+                            text="rock-paper-scissor game"
+                            src={rockpapperscissorgame}
+                            alt="rock-paper-scissor game"
                         >
                             <div className="d-flex justify-content-between flex-column mt-1">
                                 <div>
@@ -41,59 +48,62 @@ export function Projects() {
 
                                             <Accordion.Collapse eventKey="0" className="text-left">
                                                 <Card.Body>
-                                                    <strong>Description:</strong> This is a Todo App created with React and Material UI that keeps a track of your Todos
+                                                    <strong>Description:</strong>
+                                                    This is a rock-paper-scissor game built with React, typescript, HTML, CSS3, blueprinJS
+                                                    & tachyons.
                                                     <hr />
                                                     <strong>Features:</strong>
                                                     <ul className="list-styles pt-1">
-                                                        <li>Keeps track of your Todos</li>
-                                                        <li>Powered by React and Material UI</li>
-                                                        <li>Respoisive Design</li>
+                                                        <li>On landing page player name entry (mandatory)</li>
+                                                        <li>Play traditional rock-papper-scissor game 1v1</li>
+                                                        <li>Winner declared everytime by pop-up</li>
+                                                        <li>Instant score update</li>
                                                     </ul>
                                                     <hr />
                                                     <strong>Tech used:</strong>
-                                                    <ul className="d-flex">
+                                                    <ul className="d-flex" style={{ listStyle: 'none' }}>
                                                         <li>
                                                             <span className="p-2">
-                                                                <Image
-                                                                    src={HTML5}
-                                                                    alt="HTML 5"
+                                                                <img
+                                                                    src={typescript}
+                                                                    alt="typescript"
                                                                     rounded
                                                                     className="image-style m-1"
-                                                                ></Image>{" "}
-                                                                HTML5
-                                                                </span>
+                                                                ></img>{" "}
+                                                                Typescript
+                                                            </span>
                                                         </li>
                                                         <li>
                                                             <span className="p-2">
                                                                 <Image
-                                                                    src={HTML5}
-                                                                    alt="CSS 3"
-                                                                    rounded
-                                                                    className="image-style m-1"
-                                                                ></Image>{" "}
-                                                                CSS3
-                                                                </span>
-                                                        </li>
-                                                        <li>
-                                                            <span className="p-2">
-                                                                <Image
-                                                                    src={HTML5}
+                                                                    src={REACT}
                                                                     alt="React"
                                                                     rounded
-                                                                    className="image-style1 m-1"
+                                                                    className="image-style m-1"
                                                                 ></Image>{" "}
-                                                                React
-                                                                </span>
+                                                                React.js
+                                                            </span>
                                                         </li>
                                                         <li>
                                                             <span className="p-2">
                                                                 <Image
                                                                     src={HTML5}
-                                                                    alt="Material-UI"
+                                                                    alt="HTML5"
                                                                     rounded
                                                                     className="image-style1 m-1"
                                                                 ></Image>{" "}
-                                                            Material-UI
+                                                                HTML
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <span className="p-2">
+                                                                <Image
+                                                                    src={Tachyons}
+                                                                    alt="tachyons"
+                                                                    rounded
+                                                                    className="image-style1 m-1"
+                                                                ></Image>{" "}
+                                                                Tachyons
                                                             </span>
                                                         </li>
 
@@ -104,20 +114,20 @@ export function Projects() {
                                     </Accordion>
                                 </div>
                                 <div className="d-flex justify-content-between flex-nowrap text-center">
-                                    <UrlButton
+                                    {/* <UrlButton
                                         href=""
                                         target="_blank"
                                     >
                                         SEE LIVE
-                                    </UrlButton>
+                                    </UrlButton> */}
                                     <UrlButton
-                                        href=""
+                                        href="https://github.com/manzim/rockpapperscissorgame"
                                         target="_blank"
                                     >
                                         SOURCE CODE
                                     </UrlButton>
                                     <UrlButton
-                                        href=""
+                                        href="https://drive.google.com/file/d/1QYX4BtUdnbF28oQa3uEhrOOyEV1vukrG/view?usp=sharing"
                                         target="_blank"
                                     >
                                         WATCH VIDEO
@@ -127,12 +137,119 @@ export function Projects() {
                         </ImageEvent>
                     </Events>
 
+                    {/* Project: weather app */}
+                    <ImageEvent
+                        date="01/10/2020"
+                        className="text-center"
+                        text="Weather App"
+                        src={weatherapp}
+                        alt="Weather App"
+                    >
+                        <div className="d-flex justify-content-between flex-column mt-1">
+                            <div>
+                                <Accordion>
+                                    <Card>
+                                        <Accordion.Toggle
+                                            as={Card.Header}
+                                            eventKey="0"
+                                            className="p-2 text-center accordian-main"
+                                        >
+                                            PROJECT DETAILS
+                                        </Accordion.Toggle>
+
+                                        <Accordion.Collapse eventKey="0" className="text-left">
+                                            <Card.Body>
+                                                <strong>Description:</strong> 
+                                                    This is an live weather update based app. You can search any city to get the weather update
+                                                <hr />
+                                                <strong>Features:</strong>
+                                                <ul className="list-styles pt-1">
+                                                    <li>Weather update of any city</li>
+                                                    <li>Fast searching</li>
+                                                    <li>Background changes with the temperature reading to give you an idea of outside</li>
+                                                </ul>
+                                                <hr />
+                                                <strong>Tech used:</strong>
+                                                <ul className="d-flex" style={{ listStyle: 'none' }}>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={REACT}
+                                                                alt="REACT"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                            react.js
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={HTML5}
+                                                                alt="html"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                            HTML
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={CSS3}
+                                                                alt="CSS3"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                            CSS3
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={api}
+                                                                alt=""
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                            API
+                                                        </span>
+                                                    </li>
+
+                                                </ul>
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                </Accordion>
+                            </div>
+                            <div className="d-flex justify-content-between flex-nowrap text-center">
+                                {/* {/* <UrlButton
+                                    href=""
+                                    target="_blank"
+                                >
+                                    SEE LIVE 
+                                </UrlButton> */}
+                                <UrlButton
+                                    href="https://github.com/manzim/weatherapi"
+                                    target="_blank"
+                                >
+                                    SOURCE CODE
+                                </UrlButton>
+                                <UrlButton
+                                    href="https://drive.google.com/file/d/1L_wLxn0fYDkbSkBnBXtIKFTb2YsJOGJn/view?usp=sharing"
+                                    target="_blank"
+                                >
+                                    WATCH VIDEO
+                                </UrlButton>
+                            </div>
+                        </div>
+                    </ImageEvent>
                     {/* Project: Todo List With MUI */}
                     <ImageEvent
                         date="01/10/2020"
                         className="text-center"
                         text="React ToDo App"
-                        src={CSS3}
+                        src={todolist}
                         alt="React ToDo App"
                     >
                         <div className="d-flex justify-content-between flex-column mt-1">
@@ -145,66 +262,78 @@ export function Projects() {
                                             className="p-2 text-center accordian-main"
                                         >
                                             PROJECT DETAILS
-                                            </Accordion.Toggle>
+                                        </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="0" className="text-left">
                                             <Card.Body>
-                                                <strong>Description:</strong> This is a Todo App created with React and Material UI that keeps a track of your Todos
-                                                    <hr />
+                                                <strong>Description:</strong> 
+                                                This is a Todo App created with React and React-hooks that keeps a track of your tasklists
+                                                <hr />
                                                 <strong>Features:</strong>
                                                 <ul className="list-styles pt-1">
-                                                    <li>Keeps track of your Todos</li>
-                                                    <li>Powered by React and Material UI</li>
+                                                    <li>Keeps track of your tasks</li>
+                                                    <li>Add infinite amount of jobs</li>
+                                                    <li>Delete any jobs</li>
                                                     <li>Respoisive Design</li>
                                                 </ul>
                                                 <hr />
                                                 <strong>Tech used:</strong>
-                                                <ul className="d-flex">
+                                                <ul className="d-flex" style={{ listStyle: 'none' }}>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={HTML5}
-                                                                alt="HTML 5"
+                                                                src={REACT}
+                                                                alt="react.js"
                                                                 rounded
                                                                 className="image-style m-1"
                                                             ></Image>{" "}
-                                                                HTML5
-                                                                </span>
+                                                            REACT
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={REACT}
+                                                                alt="react hooks"
+                                                                rounded
+                                                                className="image-style m-1"
+                                                            ></Image>{" "}
+                                                            React Hooks
+                                                        </span>
                                                     </li>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
                                                                 src={HTML5}
-                                                                alt="CSS 3"
-                                                                rounded
-                                                                className="image-style m-1"
-                                                            ></Image>{" "}
-                                                                CSS3
-                                                                </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={HTML5}
-                                                                alt="React"
+                                                                alt="html"
                                                                 rounded
                                                                 className="image-style1 m-1"
                                                             ></Image>{" "}
-                                                                React
-                                                                </span>
+                                                            HTML
+                                                        </span>
                                                     </li>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={HTML5}
+                                                                src={Blueprint}
                                                                 alt="Material-UI"
                                                                 rounded
                                                                 className="image-style1 m-1"
                                                             ></Image>{" "}
-                                                            Material-UI
-                                                            </span>
+                                                            BluePrintJS
+                                                        </span>
                                                     </li>
-
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={Tachyons}
+                                                                alt="tachyons"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                            Tachyons
+                                                        </span>
+                                                    </li>
                                                 </ul>
                                             </Card.Body>
                                         </Accordion.Collapse>
@@ -212,34 +341,34 @@ export function Projects() {
                                 </Accordion>
                             </div>
                             <div className="d-flex justify-content-between flex-nowrap text-center">
-                                <UrlButton
-                                    href=""
+                                {/* <UrlButton
+                                    href="#"
                                     target="_blank"
                                 >
                                     SEE LIVE
-                                    </UrlButton>
+                                </UrlButton> */}
                                 <UrlButton
-                                    href=""
+                                    href="https://github.com/manzim/todolist"
                                     target="_blank"
                                 >
                                     SOURCE CODE
-                                    </UrlButton>
+                                </UrlButton>
                                 <UrlButton
-                                    href=""
+                                    href="https://drive.google.com/file/d/1hCpBbHbKn9ZVqX-j7hCHfwQImNWWNJ-X/view?usp=sharing"
                                     target="_blank"
                                 >
                                     WATCH VIDEO
-                                    </UrlButton>
+                                </UrlButton>
                             </div>
                         </div>
                     </ImageEvent>
-                    {/* Project: Todo List With MUI */}
+                    {/* Project: Tictactoe game with typescript */}
                     <ImageEvent
                         date="01/10/2020"
                         className="text-center"
-                        text="React ToDo App"
-                        src={Project1}
-                        alt="React ToDo App"
+                        text= "tic tac toe"
+                        src={tictactoe}
+                        alt= "tic tac toe"
                     >
                         <div className="d-flex justify-content-between flex-column mt-1">
                             <div>
@@ -251,65 +380,66 @@ export function Projects() {
                                             className="p-2 text-center accordian-main"
                                         >
                                             PROJECT DETAILS
-                                            </Accordion.Toggle>
+                                        </Accordion.Toggle>
 
                                         <Accordion.Collapse eventKey="0" className="text-left">
                                             <Card.Body>
-                                                <strong>Description:</strong> This is a Todo App created with React and Material UI that keeps a track of your Todos
-                                                    <hr />
+                                                <strong>Description:</strong> 
+                                                    Our Childhood game tic-tac-toe. 
+                                                <hr />
                                                 <strong>Features:</strong>
                                                 <ul className="list-styles pt-1">
-                                                    <li>Keeps track of your Todos</li>
-                                                    <li>Powered by React and Material UI</li>
-                                                    <li>Respoisive Design</li>
+                                                    <li>Login window with player name</li>
+                                                    <li>Basic tic-tac-toe</li>
+                                                    <li>Winner update</li>
                                                 </ul>
                                                 <hr />
                                                 <strong>Tech used:</strong>
-                                                <ul className="d-flex">
+                                                <ul className="d-flex" style={{ listStyle: 'none' }}>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={HTML5}
-                                                                alt="HTML 5"
+                                                                src={REACT}
+                                                                alt="REACT"
                                                                 rounded
                                                                 className="image-style m-1"
                                                             ></Image>{" "}
-                                                                HTML5
-                                                                </span>
+                                                            react.js
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span className="p-2">
+                                                            <Image
+                                                                src={typescript}
+                                                                alt="typescript"
+                                                                rounded
+                                                                className="image-style1 m-1"
+                                                            ></Image>{" "}
+                                                            Typescript
+                                                        </span>
                                                     </li>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
                                                                 src={HTML5}
-                                                                alt="CSS 3"
+                                                                alt="html"
                                                                 rounded
                                                                 className="image-style m-1"
                                                             ></Image>{" "}
-                                                                CSS3
-                                                                </span>
+                                                            HTML
+                                                        </span>
                                                     </li>
                                                     <li>
                                                         <span className="p-2">
                                                             <Image
-                                                                src={HTML5}
-                                                                alt="React"
+                                                                src={CSS3}
+                                                                alt="CSS3"
                                                                 rounded
                                                                 className="image-style1 m-1"
                                                             ></Image>{" "}
-                                                                React
-                                                                </span>
-                                                    </li>
-                                                    <li>
-                                                        <span className="p-2">
-                                                            <Image
-                                                                src={HTML5}
-                                                                alt="Material-UI"
-                                                                rounded
-                                                                className="image-style1 m-1"
-                                                            ></Image>{" "}
-                                                            Material-UI
-                                                            </span>
-                                                    </li>
+                                                            CSS3
+                                                        </span>
+                                                    </li>                                                    
 
                                                 </ul>
                                             </Card.Body>
@@ -318,27 +448,28 @@ export function Projects() {
                                 </Accordion>
                             </div>
                             <div className="d-flex justify-content-between flex-nowrap text-center">
-                                <UrlButton
-                                    href="#"
+                                {/* {/* <UrlButton
+                                    href=""
                                     target="_blank"
                                 >
-                                    SEE LIVE
-                                    </UrlButton>
+                                    SEE LIVE 
+                                </UrlButton> */}
                                 <UrlButton
-                                    href="#"
+                                    href="https://github.com/manzim/tictactoegame"
                                     target="_blank"
                                 >
                                     SOURCE CODE
-                                    </UrlButton>
+                                </UrlButton>
                                 <UrlButton
-                                    href="#"
+                                    href="https://drive.google.com/file/d/1NotUczbN0Mk4g2tqb0ZVOLX53FxwwGad/view?usp=sharing"
                                     target="_blank"
                                 >
                                     WATCH VIDEO
-                                    </UrlButton>
+                                </UrlButton>
                             </div>
                         </div>
                     </ImageEvent>
+                    {/* Project: Todo List With MUI */}
                 </Timeline>
             </div>
         </>

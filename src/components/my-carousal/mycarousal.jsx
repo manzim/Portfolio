@@ -11,9 +11,9 @@ import { ScrollDown } from '../scroll-down-button/scrolldownbutton';
 export function MyCarousal() {
     return (
         <>
-            <div className="home">
+            <div id="home" className="home">
                 <Carousel controls={false} indicators interval={3500}  pause={false}>
-                    <Carousel.Item interval={2000}>
+                    <Carousel.Item interval={5000}>
                         <img
                             className="d-block w-100 custom-img"
                             src={Slide1}

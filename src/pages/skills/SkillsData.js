@@ -3,7 +3,7 @@ import CSS3 from "../../assets/img/skills/css3.svg";
 import BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
 import REACT from "../../assets/img/skills/react.svg";
 import MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
-import REACT_ROUTER from "../../assets/img/skills/react-router.svg";
+// import REACT_ROUTER from "../../assets/img/skills/react-router.svg";
 import REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
 import MSSQL from "../../assets/img/skills/mssql.svg";
